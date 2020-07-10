@@ -1,9 +1,9 @@
 
-chmod 755 ./build-scripts/build-publish-api-eventquery.sh
-chmod 755 ./build-scripts/build-publish-api-managesubscriber.sh
-chmod 755 ./build-scripts/build-publish-api-eventowrite.sh
-chmod 755 ./build-scripts/build-publish-svc-eventoviewdataupdater.sh 
-chmod 755 ./build-scripts/build-publish-svc-eventsubscriber.sh
+chmod 700 ./build-scripts/build-publish-api-eventquery.sh
+chmod 700 ./build-scripts/build-publish-api-managesubscriber.sh
+chmod 700 ./build-scripts/build-publish-api-eventowrite.sh
+chmod 700 ./build-scripts/build-publish-svc-eventoviewdataupdater.sh 
+chmod 700 ./build-scripts/build-publish-svc-eventsubscriber.sh
 
 ./build-scripts/build-publish-api-eventquery.sh  
 ./build-scripts/build-publish-api-managesubscriber.sh
