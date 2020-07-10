@@ -1,9 +1,9 @@
 
-chmod 755 ~/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-api-eventquery.sh
-chmod 755 ~/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-api-managesubscriber.sh
-chmod 755 ~/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-api-eventowrite.sh
-chmod 755 ~/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-svc-eventoviewdataupdater.sh 
-chmod 755 ~/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-svc-eventsubscriber.sh
+chmod 700 ~/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-api-eventquery.sh
+chmod 700 ~/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-api-managesubscriber.sh
+chmod 700 ~/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-api-eventowrite.sh
+chmod 700 ~/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-svc-eventoviewdataupdater.sh 
+chmod 700 ~/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-svc-eventsubscriber.sh
 
 ~/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-api-eventquery.sh  
 ~/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-api-managesubscriber.sh
