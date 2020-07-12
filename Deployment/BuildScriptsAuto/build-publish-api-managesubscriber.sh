@@ -1,19 +1,19 @@
-DIR=~/engaze/git/
+DIR=/home/$1/engaze/git/
 if [ -d $DIR ]; then
   # Take action if $DIR exists. #
   echo "git folder exists"
 else
   ###  Control will jump here if $DIR does NOT exists ###
   echo "Folder  ${DIR} not found. Creating the same."
-  #mkdir ~/engaze/git/
+  #mkdir /home/$1/engaze/git/
 fi
 
-cd ~/engaze/git
-DIR=~/engaze/git/ManageSubscriber/
+cd /home/$1/engaze/git
+DIR=/home/$1/engaze/git/ManageSubscriber/
 if [ -d $DIR ]; then
   # Take action if $DIR exists. #
-  echo "Cleaning up ~/engaze/git/ManageSubscriber folder before cloning."
-  rm -r -f ~/engaze/git/ManageSubscriber/
+  echo "Cleaning up /home/$1/engaze/git/ManageSubscriber folder before cloning."
+  rm -r -f /home/$1/engaze/git/ManageSubscriber/
 else
   ###  Control will jump here if $DIR does NOT exists ###
   echo "${DIR} not found."
@@ -26,7 +26,7 @@ kill $(ps aux | grep 'Subscriber.Service.dll' | awk '{print $2}')
 
 echo "Cloning https://github.com/redtopdev/ManageSubscriber.git"
 git clone https://github.com/redtopdev/ManageSubscriber.git
-echo "Building ~/engaze/git/ManageSubscriber/All.sln"
-dotnet build --configuration debug ~/engaze/git/ManageSubscriber/All.sln
-echo "Publishing ~/engaze/git/ManageSubscriber/Service/Subscriber.csproj to ~/engaze/api/managesubscriber/  folder."
-dotnet publish --output ~/engaze/api/managesubscriber/ ~/engaze/git/ManageSubscriber/Service/Subscriber.csproj
+echo "Building /home/$1/engaze/git/ManageSubscriber/All.sln"
+dotnet build --configuration debug /home/$1/engaze/git/ManageSubscriber/All.sln
+echo "Publishing /home/$1/engaze/git/ManageSubscriber/Service/Subscriber.csproj to /home/$1/engaze/api/managesubscriber/  folder."
+dotnet publish --output /home/$1/engaze/api/managesubscriber/ /home/$1/engaze/git/ManageSubscriber/Service/Subscriber.csproj
