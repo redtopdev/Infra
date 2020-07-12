@@ -1,15 +1,20 @@
 #!/bin/bash
-
+echo "Setting permissions to build scripts"
 chmod 777 /home/$1/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-api-eventquery.sh
 chmod 777 /home/$1/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-api-managesubscriber.sh
 chmod 777 /home/$1/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-api-eventowrite.sh
 chmod 777 /home/$1/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-svc-eventoviewdataupdater.sh 
 chmod 777 /home/$1/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-svc-eventsubscriber.sh
 
+echo ">>>>>>>>>>>>Build & Publish EventQuery"
 /home/$1/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-api-eventquery.sh $1 
+echo ">>>>>>>>>>>>Build & Publish Managesubscriber"
 /home/$1/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-api-managesubscriber.sh $1
+echo ">>>>>>>>>>>>Build & Publish Eventowrite"
 /home/$1/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-api-eventowrite.sh $1
+echo ">>>>>>>>>>>>Build & Publish Eventoviewdataupdater"
 /home/$1/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-svc-eventoviewdataupdater.sh $1  
+echo ">>>>>>>>>>>>Build & Publish Eventsubscriber"
 /home/$1/engaze/git/Infra/Deployment/BuildScriptsAuto/build-publish-svc-eventsubscriber.sh $1
 
 echo "Running API EventQuery.Service.dll"
