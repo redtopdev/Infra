@@ -47,7 +47,7 @@ SET /P upload_required=Do you want to upload packages to nuget server? Y/N:
 IF "%upload_required%" NEQ "y" GOTO OK
 
 FOR %%G in ("%output_dir%\*.nupkg") DO (
-dotnet nuget push %%G -k oy2knfrbqz2alzkedmyajol4hpxb2yrunkoeiojtb7dsue -s https://api.nuget.org/v3/index.json
+dotnet nuget push %%G -k oy2ne2ogvuug4i6emziqw2jgcuwn3ivurcto4srthcs7ky -s https://api.nuget.org/v3/index.json
 )
 
 SET /P delete_required=Do you want to delete local nuget temp folder? Y/N:
