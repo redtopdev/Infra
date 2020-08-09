@@ -62,6 +62,9 @@ server {
         location /evento {
           proxy_pass http://localhost:6000/evento;
         }
+		
+        location /location {
+          proxy_pass http://localhost:7000/location;		
 
         # pass PHP scripts to FastCGI server
         #
