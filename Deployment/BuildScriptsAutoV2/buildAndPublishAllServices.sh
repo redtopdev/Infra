@@ -24,5 +24,5 @@ echo "Running API ShareLocation.Service.dll on port 7000"
 cd /home/$1/engaze/api/location
 dotnet ShareLocation.Service.dll --console  --urls http://localhost:7000/ &
 echo "Running API Notification.Service.dll on port 8000"
-cd /home/$1/engaze/api/pushnotification
-dotnet Notification.Service.dll --console --urls http://localhost:8000/ &
+#cd /home/$1/engaze/api/pushnotification
+#dotnet Notification.Service.dll --console --urls http://localhost:8000/ &
