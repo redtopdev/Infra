@@ -67,9 +67,9 @@ server {
           proxy_pass http://localhost:7000/location;	
 		}
 		  
-        location /notification {
-          proxy_pass http://localhost:8000/notification;	
-		}	
+        #location /notification {
+        #  proxy_pass http://localhost:8000/notification;	
+	#	}	
 
         # pass PHP scripts to FastCGI server
         #
