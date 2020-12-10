@@ -40,6 +40,7 @@ chown -R ubuntu: $homeFolder/engaze/
 echo "Running BuildAndPublishAllServices.sh"
 ./Deployment/BuildScriptsAutoV2/buildAndPublishAllServices.sh $userName
 
+sudo cp $homeFolder/engaze/git/Infra/Deployment/BuildScriptsAutoV2/index.nginx-debian.html /var/www/html/index.nginx-debian.html
 sudo cp $homeFolder/engaze/git/Infra/Deployment/BuildScriptsAutoV2/nginx-sitesenabled-default /etc/nginx/sites-enabled/default
 systemctl restart nginx
 
